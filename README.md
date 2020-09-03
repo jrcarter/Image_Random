@@ -1,5 +1,5 @@
 # Image_Random
-True random numbers from a digital camer
+True random numbers from a digital camera
 
 This works under Linux with the GNAT compiler; modification for other platforms or compilers is left as an exercise for the despearate
 
