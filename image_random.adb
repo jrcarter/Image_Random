@@ -30,7 +30,6 @@ package body Image_Random is
          File_Size : constant Natural := Integer (Ada.Directories.Size (File_Name) );
 
          subtype Buffer_List is PragmARC.Skein.Byte_List (1 .. File_Size);
-         --  subtype Buffer_List is Ada.Streams.Stream_Element_Array (1 .. Ada.Streams.Stream_Element_Offset (File_Size) );
 
          package Buffer_IO is new Ada.Sequential_IO (Element_Type => Buffer_List);
 
