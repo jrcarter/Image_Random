@@ -4,8 +4,11 @@
 -- Ideally, the camera should have its lens cap on, or have a similar dark covering, so the image is of the camera sensor noise
 -- However, another randomly changing scene, such as a lava lamp or aquarium, may also work
 --
--- Copyright (C) by Pragmada Software Engineering
--- Released under the terms of the BSD 3-Clause license; see https://opensource.org/licenses
+-- Copyright (C) by PragmAda Software Engineering
+-- SPDX-License-Identifier: BSD-3-Clause
+-- See https://spdx.org/licenses/
+-- If you find this software useful, please let me know, either through
+-- github.com/jrcarter or directly to pragmada@pragmada.x10hosting.com
 --
 -- 2025-06-01 Use Skein-1024 to allow variable result bytes
 -- 2020-09-01 Initial version
