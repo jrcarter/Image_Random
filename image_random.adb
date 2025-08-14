@@ -5,6 +5,7 @@
 -- If you find this software useful, please let me know, either through
 -- github.com/jrcarter or directly to pragmada@pragmada.x10hosting.com
 --
+-- 2025-08-15 Common definition of a byte in PragmARCs
 -- 2025-06-01 Use Skein-1024 to allow variable result bytes
 -- 2020-09-01 Initial version
 --
@@ -32,11 +33,11 @@ package body Image_Random is
       Read_File : declare
          File_Size : constant Natural := Integer (Ada.Directories.Size (File_Name) );
 
-         subtype Buffer_List is PragmARC.Skein.Byte_List (1 .. File_Size);
+         subtype Buffer_List is PragmARC.Byte_List (1 .. File_Size);
 
          package Buffer_IO is new Ada.Sequential_IO (Element_Type => Buffer_List);
 
-         subtype Result_List is PragmARC.Skein.Byte_List (1 .. Num_Bytes);
+         subtype Result_List is PragmARC.Byte_List (1 .. Num_Bytes);
          subtype Stream_List is Ada.Streams.Stream_Element_Array (1 .. Ada.Streams.Stream_Element_Offset (Num_Bytes) );
 
          function To_Stream is new Ada.Unchecked_Conversion (Source => Result_List, Target => Stream_List);
